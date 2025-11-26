@@ -1,0 +1,86 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🌈 COLORFUL MOVING BACKGROUND */
+body {
+    background: linear-gradient(135deg, #ff9a00, #ff0066, #6100ff);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* GAME BOX CENTER */
+.game-container {
+    width: 380px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* BUTTONS */
+.choices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.choice {
+    width: 110px;
+    padding: 12px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.17);
+    border: 2px solid rgba(255,255,255,0.35);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.25);
+}
+
+/* RESULT BOX */
+.result-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* SCOREBOARD CENTER */
+.score-board {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    font-size: 18px;
+}
